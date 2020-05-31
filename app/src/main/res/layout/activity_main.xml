@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96EC94"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bmi_calculator"
+        android:textColor="#000"
+        android:textSize="35sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/simple_text"
+        />
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/enter_weight"
+        android:background="#fff"
+        android:layout_below="@id/simple_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:id="@+id/et_weight"
+
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_height"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/enter_height"
+        android:background="#fff"
+        android:layout_below="@id/et_weight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:layout_below="@id/et_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:layout_below="@id/tv_result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
